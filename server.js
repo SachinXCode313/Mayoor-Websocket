@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 8080;
 app.options('*', cors()); 
 
 app.use(cors({
-    origin: ["http://localhost:3000", "http://localhost:3001", "https://mayoor-frontend.vercel.app", "https://mayoor-web.vercel.app"],
+    origin: "*",
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     credentials: true,
     allowedHeaders: '*',
